@@ -29,7 +29,7 @@ img {
 body {
 	font-family: 'Roboto', sans-serif;
 	color: #000000;
-	background-color:#f6f8fc;
+	background-color: #F1F1F1;
 }
 
 header{
@@ -37,7 +37,6 @@ header{
 	align-items: center;
 	position: sticky;
 	top: 0;
-	background-color:white;
 	width: 100%;
 	padding: .75rem 1rem; 
 	height: var(--header-height);
@@ -91,14 +90,13 @@ header{
 } */
 
 .sidebar{
-	background-color: bisque;
 	flex-shrink: 0;
 	width: 55px;
 	display: flex;
 	flex-direction: column;
 	height:calc(100vh - var(--header-height));
 	align-items: center;
-	transition: width 200ms ease-in-out;
+	transition: width 100ms ease-in-out;
 }
 
 .sidebar.open{
@@ -108,7 +106,7 @@ header{
 .sidebar .hidden-sidebar{
 	opacity: 0;
 	width: 0;
-	transition: opacity 200ms ease-in-out;
+	transition: opacity 100ms ease-in-out;
 }
 
 .sidebar.open .hidden-sidebar{
@@ -181,5 +179,11 @@ main{
 }
 
 .content{
-	margin-left: 1rem;
+	background-color: white;
+	/* border-radius: 20px; */
+	margin-right: 55px;
+}
+
+.text{
+	margin: 40px 100px 0 100px;
 }
