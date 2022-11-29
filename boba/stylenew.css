@@ -29,7 +29,7 @@ img {
 body {
 	font-family: 'Roboto', sans-serif;
 	color: #000000;
-	background-color: #F1F1F1;
+	background-color: #FCFCFC;
 }
 
 header{
@@ -91,7 +91,7 @@ header{
 
 .sidebar{
 	flex-shrink: 0;
-	width: 55px;
+	width: 0;
 	display: flex;
 	flex-direction: column;
 	height:calc(100vh - var(--header-height));
@@ -107,11 +107,14 @@ header{
 	opacity: 0;
 	width: 0;
 	transition: opacity 100ms ease-in-out;
+	white-space: nowrap;
 }
+
 
 .sidebar.open .hidden-sidebar{
 	width: 100%;
 	opacity: 1;
+	
 }
 
 .top-sidebar{
@@ -146,10 +149,6 @@ header{
 	padding-left: 1rem;
 }
 
-.sidebar.open .sidebar-list-item a{
-	justify-content: flex-start;
-}
-
 .sidebar-list-item{
 	fill: gray;
 }
@@ -170,10 +169,6 @@ header{
 	margin-right: 1rem;
 }
 
-.sidebar.open .sidebar-icon{
-	margin-right: 1rem;
-}
-
 main{
 	display: flex;
 }
@@ -181,7 +176,7 @@ main{
 .content{
 	background-color: white;
 	/* border-radius: 20px; */
-	margin-right: 55px;
+	
 }
 
 .text{
