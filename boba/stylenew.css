@@ -68,27 +68,6 @@ header{
 	text-decoration: none;
 }
 
-/* .sidebar{
-	background-color: bisque;
-	position: inherit;
-	height: 100vh;
-	width: 240px;
-}
-
-.sidebar-item{
-	padding-left: 15px;
-	line-height: 60px;
-}
-
-.sidebar-item a{
-	text-decoration: none;
-}
-
-.sidebar-item i{
-	padding-right: 5px;
-	font-size: 24px;
-} */
-
 .sidebar{
 	flex-shrink: 0;
 	width: 0;
@@ -114,7 +93,7 @@ header{
 .sidebar.open .hidden-sidebar{
 	width: 100%;
 	opacity: 1;
-	
+	border-righ
 }
 
 .top-sidebar{
@@ -125,7 +104,6 @@ header{
 	flex-grow: 1;
 	overflow-y: auto;
 	overflow-x: hidden;
-	margin: 1rem 0;
 }
 
 .middle-sidebar,
@@ -175,8 +153,6 @@ main{
 
 .content{
 	background-color: white;
-	/* border-radius: 20px; */
-	
 }
 
 .text{
