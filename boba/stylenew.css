@@ -52,7 +52,7 @@ header{
 .menu-icon{
 	width: 24px;
 	height: 24px;
-	fill: rgb(96, 96, 96);
+	fill: var(--grey-color);
 	cursor: pointer;
 }
 
@@ -77,17 +77,14 @@ header{
 	height:calc(100vh - var(--header-height));
 	transition: width 100ms ease-in-out;
 	width: 0;
+	flex-grow: 1;
+	overflow-y: auto;
+	overflow-x: hidden;
 }
 
 .sidebar.open{
 	width: 220px;
 	padding: 0rem;
-}
-
-.middle-sidebar{
-	flex-grow: 1;
-	overflow-y: auto;
-	overflow-x: hidden;
 }
 
 .sidebar-list{
@@ -100,12 +97,12 @@ header{
 
 .sidebar-list-item a{
 	align-items: center;
-	fill: var(--grey-color);
 	display: flex;
 	text-decoration: none;
 	padding: 0.3rem 0 0.3rem 1rem;
 	margin-bottom: 0.3rem;
-	
+	fill: var(--grey-color);
+	color:#686868;
 }
 
 .sidebar-list-item::before{
@@ -113,12 +110,11 @@ header{
 	position: absolute;
 	content: '';
 	height: 100%;
-	border-left: 3px solid #1e75ff;
+	border-left: 4px solid #1e75ff;
 	border-radius: 2px;
 	opacity: 0;
 	visibility: hidden;
 }
-
 
 .sidebar-list-item:hover a{
 	fill: #1e75ff;
@@ -132,7 +128,6 @@ header{
 }
 
 .list-item-text{
-	color:#686868;
 	transition: opacity 0.6s ease;
 	opacity: 1;
 	white-space: nowrap;
