@@ -158,9 +158,9 @@ header{
 	cursor: pointer;
 	width: 20px;
 	height: 20px;
-	margin: auto;
 	justify-content: center;
 	display: flex;
+	padding: 0;
 }
 
 .sidebar-icon{
@@ -172,6 +172,7 @@ header{
 
 .sidebar-icon-arrow{
 	height: 16px;
+	width: 16px;
 	fill: var(--grey-color);
 }
 
